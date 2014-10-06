@@ -240,4 +240,4 @@ if (typeof module !== "undefined" && module !== null) {
   define([], function() {
     return saveAs;
   });
-}
+} else { window.saveAs = saveAs; }
